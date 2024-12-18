@@ -420,24 +420,79 @@
 // }
 
 
+// .map() - accepts a callback and applies that function to each element of an array, then return a new array
 
 
 
 
+// const numbers = [1, 2, 3, 4, 5];
+
+// const squares = numbers.map(square);
+// const cubes = numbers.map(cube);
+
+// console.log(squares);
+// console.log(cubes);
+
+// function square(element) {
+//     return Math.pow(element, 2);
+// }
+
+// function cube(element) {
+//     return Math.pow(element, 3);
+// }
 
 
 
+// const students = ["Ram", "Arjun", "Karnan"];
+// const studentsUpper = students.map(upperCase);
+
+// console.log(studentsUpper);
+
+// function upperCase(element) {
+//   return element.toUpperCase();
+// }
+
+
+// const dates = ["2024-10-10", "2025-10-20", "2026-1-30"] ;
+
+// const formattedDates = dates.map(formatDates);
+
+// console.log(formattedDates);
+
+// function formatDates(element) {
+//     const parts = element.split("-");
+//     return `${parts[2]}/${parts[1]}/${parts[0]}`
+// }
 
 
 
+// filter() = creates a new array by filtering out elements
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+
+// let evenNums = numbers.filter(isEven);
+
+// console.log(evenNums);
 
 
+// function isEven(element) {
+//     return element % 2 === 0;
+// }
 
+// let ages = [16, 17, 18, 19, 20, 60];
 
+// const adults = ages.filter(isAdult);
 
-// map()
-// filter()
+// console.log(adults);
+
+// function isAdult(element) {
+//     return element >= 18;
+// }
+
 // reduce()
+
+
+
 // fuction expression
 // arrow function 
 // javascript objects
