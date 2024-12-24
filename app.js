@@ -1,3 +1,4 @@
+
 // console.log("Welcome to js");
 // window.alert("Welcome to ja");
 
@@ -1239,19 +1240,209 @@
 
 // array of objects 
 
-// const friuts = [{name: "apple", color: "red"}, {}, {}, {}, {}, {}, {}]
-
-// sorting
-
-
-
-
+// const fruits =  [{name: "apple", color: "red", calories: 95}, 
+//                  {name: "orange", color: "orange", calories: 45}, 
+//                  {name: "banana", color: "yellow", calories: 105},
+//                  {name: "coconut", color: "white", calories: 159},
+//                  {name: "pineapple", color: "yellow", calories: 46}];
 
 
 
 
 
 
+//  fruits.push({name:"grapes", color: "purple", calories: 45});
+//  fruits.pop({name:"grapes", color: "purple", calories: 45});
+//  fruits.splice(1, 2);
+
+// for each 
+// fruits.forEach(fruit => console.log(fruit.calories));
+
+// map -> wll return the new array
+
+// const fruitNames = fruits.map(fruits => fruits.name);
+// console.log(fruitNames);
+// const fruitColors = fruits.map(fruits => fruits.color);
+// console.log(fruitColors);
+
+
+// filter - will return the array after using each element and checking the condition
+
+// const yellowFruits = fruits.filter(fruit => fruit.color === "yellow");
+// console.log(yellowFruits);
+// const lowCalFruits = fruits.filter(fruit => fruit.calories < 100);
+// console.log(lowCalFruits);
+// const highCalFruits = fruits.filter(fruit => fruit.calories >= 100);
+// console.log(highCalFruits);
+
+
+// reduce method - this will return single value 
+
+// const maxFruit = fruits.reduce((max, fruit) => fruit.calories >= max.calories ? fruit : max);
+
+// console.log(maxFruit);
+
+//  console.log(fruits);
+                
+// console.log(friuts[1].calories);
+     
+
+
+
+// sorting() - method used to sort elements of an array in place,
+// sorts elements as strings in lexicographic order, not alphabetical order.
+// lexicographic = (apphabet + number + symbols) as strings
+
+
+
+// let fruits = ["apple", "orange", "banana", "coconut", "pineapple"];
+// let numbers = [1, 3, 6, 4, 5, 2, 7, 9, 8, 10];
+
+// const people = [{name: "navin", age: 21, gpa: 8.0}, 
+//                 {name: "thiloth", age: 22, gpa: 9.0}, 
+//                 {name: "siva", age: 51, gpa: 7.0}, 
+//                 {name: "ram", age: 27, gpa: 5.0}];
+
+// fruits.sort();
+// numbers.sort((a,b) => a - b);
+// numbers.sort((a,b) => b - a);
+
+// people.sort((a, b) => a.age - b.age);
+// console.log(people);
+
+// people.sort((a, b) => b.age - a.age);
+// console.log(people);
+
+// people.sort((a, b) => a.gpa - b.gpa);
+// console.log(people);
+// people.sort((a, b) => b.gpa - a.gpa);
+// console.log(people);
+
+
+// people.sort((a, b) => a.name.localeCompare(b.name));
+// console.log(people);
+// people.sort((a, b) => b.name.localeCompare(a.name));
+// console.log(people);
+
+// console.log(people);
+
+// setTimeout - function in javascript that allows us to schedule the excecution of a function after an amount of the(milliseconds) times are approximate (varies based workload of the js runtime env)
+
+// setTimeout(callback, delay)
+
+
+
+// function sayHello() {
+//     window.alert("hello");
+// }
+
+// setTimeout(sayHello, 3000); // after 3 seconds the above function will be executed.
+
+// setTimeout(function(){
+//     window.alert("hello");
+// }, 3000)
+
+// setTimeout(() => window.alert("hello"), 3000);
+
+
+// cleartimeout() = function to cancel before it triggers 
+
+
+// const timeoutId = setTimeout(() => window.alert("hello"), 3000);
+
+// clearTimeout(timeoutId);
+
+
+// let timeoutId;
+
+// function startTimer() {
+//     timeoutId = setTimeout(()=>window.alert("hello"), 3000);
+//     console.log("timer started");
+// }
+
+// function clearTimer() {
+//     clearTimeout(timeoutId);
+//     console.log("timer cleared");
+// }
+
+
+
+// ES6 - an external file that conatains reusable code that can be imported into other javascript files.
+// write reusable code for many different apps.
+// can contains varaibles, classes, functions and more
+// introduced a prat ecmascript 2015 update 
+
+
+// synchronous  - exectes line by line consecutively in sequencial manner code that waits for an operation to complete
+
+
+// console.log("Tast 1");
+// console.log("Tast 2");
+// console.log("Tast 3");
+
+
+// Asynchronous - allows multiple operations to be performed concurrently without waiting,
+// Doesn't block the executuon flow and allow the program to continue 
+
+
+
+
+//(i/o operation, network requests, fetching data)
+
+// handle with :- callback, promises, Async/Await
+
+// function func1(callback) {
+//     setTimeout(() => { console.log("Task 1")
+//         callback();
+//     }, 3000);
+// }
+
+// function func2() {
+//     console.log("Tast 2");
+//     console.log("Tast 3");
+//     console.log("Tast 4");
+// }
+
+// func1(func2);
+
+// ErrorHandling - an object is created to represent a problem that occurs often with user input or established a coonections.
+
+
+// console.log(x);
+
+// Network issues
+// Promise rejection
+// security errors
+
+// console.log("You reach the end of the program");
+
+
+
+// try{}
+// catch {}
+// finally{}
+
+
+try {
+    const dividend =Number(window.prompt("Enter the dividend:"));
+    const divisor = Number(window.prompt("Enter the divisor: "));
+    
+    if(divisor == 0) {
+        throw new Error("You can't divide by zero")
+    }
+    if(isNaN(dividend) || isNaN(divisor)) {
+        throw new Error("Please enter valid numbers, must be numb");
+    }
+
+    const result = dividend / divisor;
+    
+    console.log(result);
+}
+catch(error) {
+    console.error("An error occurred:", error);
+}
+
+console.log("program ended");
 
 
 
@@ -1266,8 +1457,19 @@
 
 
 
-// setTimeout
-// ErrorHandling 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // DOM Navigation 
 // Mouse Events 
 // key events 
@@ -1282,6 +1484,23 @@
 
 
 
+
+
+
+
+// ES6 Modules
+
+// import {PI, getCircumference, getArea, getVoloume} from './mathUtil.js';
+
+// console.log(PI);
+
+// const circum = getCircumference(10);
+// const area = getArea(10);
+// const vol = getVoloume(10);
+
+// console.log(`${circum.toFixed(2)}cm`);
+// console.log(`${area.toFixed(2)}cm^2`);
+// console.log(`${vol.toFixed(2)}cm^3`);
 
 
 
