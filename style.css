@@ -1,5 +1,73 @@
-.box {
+/* .box {
     border: 3px solid;
     width: 100%;
     height: 125px;
+} 
+
+#fruits {
+    border: 3px solid;
+    font-size: 2rem;
+} 
+
+#myBox {
+    background-color: lightseagreen;
+    width: 250px;
+    height: 250px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#myBtn {
+    font-size: 3rem;
+} 
+
+body {
+    margin: 0;
+}
+
+#myBox {
+    background-color: lightblue;
+    width: 250px;
+    height: 250px;
+    font-size: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} 
+
+.myButtons {
+    font-size: 4rem;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: lightgreen; 
+} */
+
+
+#myButton {
+    font-size: 3rem;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.enabled {
+    background-color: lightgreen;
+    color: wheat;
+}
+
+.hover {
+    box-shadow: 0 0 10px lightslategray;
+    font-weight: bold;
+}
+
+.disabled {
+    background-color: gray;
+    color: white;
 }

@@ -1534,7 +1534,13 @@
 // })
 
 
+// year passed out 2014
+// greens document = 3.5 years exp 
+// 2019 - 2022 
 
+// original exp - 2022 Jan - 2022 nov -  11 months - 10.5lpa + 50k bonus
+
+// 2 years gap - 2023, 2024
 
 
 
@@ -1659,43 +1665,518 @@
 
 // step 1 CREATE THE ELEMENT
 
-const newH1 = document.createElement("h1");
+// const newH1 = document.createElement("h1");
 
+// const newListItem = document.createElement("li");
+// newListItem.id = "coconut";
+// newListItem.style.fontWeight = "bold";
+// newListItem.style.backgroundColor = "lightgreen";
 // STEP 2 ADD ATTRIBUTEs/PROPERTIES
 
-newH1.textContent = "I like veg briyani";
-newH1.id = "myH1";
-newH1.style.color = "red";
-newH1.style.textAlign = "center";
+
+// newListItem.textContent = "grape";
+
+// newH1.textContent = "I like veg briyani";
+// newH1.id = "myH1";
+// newH1.style.color = "red";
+// newH1.style.textAlign = "center";
 
 // Step 3 APPEND ELEMENTS TO DOM
+
+// document.body.append(newListItem);
+//document.body.prepend(newListItem);
+// document.getElementById("fruits").appendChild(newListItem);
+// document.getElementById("fruits").prepend(newListItem);
+// const orange = document.getElementById("orange");
+// document.getElementById("fruits").insertBefore(newListItem, orange);
+
+// const listItems = document.querySelectorAll("#fruits li");
+// document.getElementById("fruits").insertBefore(newListItem, listItems[0]);
 
 // document.body.append(newH1);
 // document.body.prepend(newH1);
 // document.getElementById("box1").appendChild(newH1);
+// const box2 = document.getElementById("box2");
+// document.body.insertBefore(newH1, box2);
+// const box1 = document.getElementById("box1");
+// document.body.insertBefore(newH1, box1);
+
+// const boxes = document.querySelectorAll(".box");
+// document.body.insertBefore(newH1, boxes[3]);
 
 // REMOVE HTML ELEMENTS
 
+// document.body.removeChild(newH1);
+// document.getElementById("box1").removeChild(newH1);
+// document.getElementById("fruits").removeChild(newListItem);
 
 
+// event listners = listen for specfic events to create interactive web pages 
 
-
-
-
-
-
-
+// events: click, mouseover, mouseout, keypress
 
 // Mouse Events 
-// key events 
 
-// Node List 
-// class List
+// .addEventListner(event, callback);
+// .addEventListner(event, annonymous);
+// .addEventListner(event, arrow function);
 
-// Async/awiat 
-// promises 
+
+// const myBox = document.getElementById("myBox");
+// const myBtn = document.getElementById("myBtn");
+
+// function changeColor(event) {
+//     console.log(event);   
+    // event.target.style.backgroundColor = "lightgreen";
+    // event.target.textContent = "Clicked!😃";
+// }
+
+// myBox.addEventListener("click", changeColor);
+
+// myBox.addEventListener("click", function(event){
+//     event.target.style.backgroundColor = "lightgreen";
+//     event.target.textContent = "Clicked!😃";
+// // });
+// myBox.addEventListener("click", event => {
+//     event.target.style.backgroundColor = "lightgreen";
+//     event.target.textContent = "Clicked!😃";
+// });
+
+// myBox.addEventListener("mouseover", event => {
+//     event.target.style.backgroundColor = "tomato";
+//     event.target.textContent = "dont't do it😃";
+// })
+
+// myBox.addEventListener("mouseout", event => {
+//     event.target.style.backgroundColor = "lightseagreen";
+//     event.target.textContent = "Click Me 🙂";
+// })
+
+
+
+// myBtn.addEventListener("click", event => {
+//   myBox.style.backgroundColor = "lightgreen";
+//   myBox.textContent = "Clicked!😃";
+// });
+
+// myBtn.addEventListener("mouseover", event => {
+//     myBox.style.backgroundColor = "tomato";
+//     myBox.textContent = "dont't do it😃";
+// })
+
+// myBtn.addEventListener("mouseout", event => {
+//     myBox.style.backgroundColor = "lightseagreen";
+//     myBox.textContent = "Click Me 🙂";
+// })
+
+
+// key events - keypress 
+// events: keydown, keyup
+// document.addEventListener(event, callback);
+
+
+
+// const myBox = document.getElementById("myBox");
+// const moveAmount = 10;
+// let x = 0;
+// let y = 0;
+
+
+// document.addEventListener("keydown", event => {
+//     // console.log(event.key);
+//     if(event.key.startsWith("Arrow")) {
+//         switch(event.key) {
+//             case "ArrowUp":
+//                 y -= moveAmount;
+//                 break;
+//             case "ArrowDown":
+//                 y += moveAmount;
+//                 break;
+//             case "ArrowLeft":
+//                 x -= moveAmount;
+//                 break;
+//             case "ArrowRight":
+//                 x += moveAmount;
+//                 break;
+//         }
+
+//         myBox.style.top = `${y}px`;
+//         myBox.style.left = `${x}px`;
+//     }
+// })
+
+// document.addEventListener("keydown", event => {
+//    myBox.textContent = "😃";
+//    myBox.style.backgroundColor = "tomato";
+// })
+
+// document.addEventListener("keyup", event => {
+//    myBox.textContent = "🙂"
+//    myBox.style.backgroundColor = "lightblue";
+// })
+
+
+// document.addEventListener("keydown", event => {
+//     console.log(event.key);
+// console.log(`key down = ${event.key}`);
+// })
+
+// document.addEventListener("keyup", event => {
+//     console.log(`key up = ${event.key}`);
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Node List - Static collection of HTML elements by (id, class, elemennt)
+// can be created by using queryselectoeAll()
+// similar to an array but no (map, filter, reduce)
+// nodelist won't update to automatiaclly reflect changes
+
+
+let buttons = document.querySelectorAll(".myButtons");
+
+// console.log(buttons);
+
+// buttons.forEach(button => {
+//    button.style.backgroundColor = "green";
+//    button.textContent += "🙂";
+// });
+
+
+// click event
+
+// buttons.forEach(button => {
+//     button.addEventListener("click", event => {
+//         event.target.style.background = "tomato";
+//     });
+// });
+
+// buttons.forEach(button => {
+//     button.addEventListener("mouseover", event => {
+//         event.target.style.background = "lightblue";
+//     })
+// })
+// buttons.forEach(button => {
+//     button.addEventListener("mouseout", event => {
+//         event.target.style.background = "green";
+//     })
+// })
+
+
+// ADD an element 
+// const newButton = document.createElement("button"); // step1
+
+// newButton.textContent = "Button 5";// step 2 add attributes 
+// newButton.classList = "myButtons";
+
+// document.body.append(newButton)  // step 3 now we need to append to the dom
+
+// console.log(buttons);
+
+
+// let newButton = document.createElement("button"); // step1
+
+// newButton.textContent = "Button 5";// step 2 add attributes 
+// newButton.classList = "myButtons";
+
+// document.body.append(newButton)  // step 3 now we need to append to the dom
+
+// buttons = document.querySelectorAll(".myButtons");
+
+// console.log(buttons);
+
+// Remove an Element
+
+// buttons.forEach(button => {
+//     button.addEventListener("click", event => {
+//         event.target.remove();
+//         buttons = document.querySelectorAll(".myButtons");
+//         console.log(buttons);
+//     });
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class List - element property in javascript used to interact with an elemnts list of classes (css classes), allows us to make reusable classes for many elements. across web pages.
+
+
+// add()
+// remoeve()
+// toogle (remove if present, add if not)
+// replace (oldClass, newClass)
+// contains();
+
+
+// const myButton = document.getElementById("myButton");
+
+// myButton.classList.add("enabled");
+
+// myButton.addEventListener("click", (event) => {
+
+//      if(event.target.classList.contains("disabled")) {
+//          event.target.textContent += "🙂"
+//      } else {
+//         event.target.classList.replace("enabled", "disabled");
+//      }
+
+   
+// })
+
+// myButton.addEventListener("mouseover", event => {
+//     event.target.classList.toggle("hover");
+// })
+// myButton.addEventListener("mouseout", event => {
+//     event.target.classList.toggle("hover");
+// })
+
+// myButton.addEventListener("mouseover", event => {
+//     event.target.classList.add("hover");
+// })
+// myButton.addEventListener("mouseout", event => {
+//     event.target.classList.remove("hover");
+// })
+
+// myButton.classList.add("enabled");
+// myButton.classList.remove("enabled");
+
+
+// myButton.classList.add("hover");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// callback hell - situation in js where callbacks are nested with other callbacks to the degree where the code is difficult to read. old pattern to handle asynchronous functions.
+// a(function (resultFromA)) {
+//     b(resultFromA, function (resultFromB) {
+//         c(resultFromB, function (resultFromC) {
+//             d(resultFromC, function (resultFromD) {
+//                 e(resultFromD, function (resultFromE) {
+//                     f(resultFromE);
+//                 });
+//             });
+//         });
+//     });
+// }
+
+// use promises = async/await to avoid the callback hell 
+
+// function task1(callback) {
+//     setTimeout(() => {
+//         console.log("Task 1 complete");
+//         callback();
+//     }, 2000);  
+// }
+// function task2(callback) {
+//     setTimeout(() => {
+//         console.log("Task 2 complete");
+//         callback();
+//     }, 1000); 
+    
+// }
+// function task3(callback) {
+//     setTimeout(() => {
+//         console.log("Task 3 complete");
+//         callback();
+//     }, 3000); 
+    
+// }
+// function task4(callback) {
+//     setTimeout(() => {
+//         console.log("Task 4 complete");
+//         callback();
+//     }, 1500); 
+    
+// }
+
+// task1(() => {
+//     task2(() => {
+//         task3(() => {
+//             task4(() => {
+//                 console.log("All tasks completed");
+//             });
+//         });
+//     });
+// })
+
+
+
+
+
+
+
+// Async/await - Async - makes a function return a promise 
+// await - makes a async function wait for a promise promise.
+
+// allows us to write asynchronous code in a synchronous manner, aynsc doess't have resoleve or reject parameters everything after await is placed event queue.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// promises - Object that manages asynchronous operation. Wrap a promise object around {asynchronous code}
+// "I promise to return the value"
+// Pending - Resolved or Rejected
+
+// new Promise(resolve, reject) => {asynchronous code}
+
+// Do the chores in order
+
+// 1) walk the pet
+// 2) clean the house
+// 3) take out the trash 
+
+
+function walkDog() {
+     return new Promise((resolve, reject) => {
+        setTimeout(() => {
+    
+            const dogWalked = false;
+
+            if(dogWalked) {
+                resolve("You walk the dog 🐈");
+            } else {
+                reject("The dog didn't walk");
+            }  
+        }, 1500);
+    })
+}
+function cleanKitchen() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const kitchenCleand = true;
+
+            if(kitchenCleand) {
+                resolve("you clean the kitchen 🖌️");
+            } else {
+                reject("The kitchen is not clean");
+            }  
+        }, 2500);
+    })
+}
+
+function takeOutTrash() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const trashTakenOut = true;
+            if(trashTakenOut) {
+                resolve("You take out the trash 🚮");
+            } else {
+                reject("The trash is not taken out");
+            }  
+        }, 1000)
+    })
+}
+
+
+// walkDog(() => {
+//     cleanKitchen(() => {
+//         takeOutTrash(() => {
+//             console.log("You finished all the chores!!");
+//         });
+//     });
+// });
+
+
+// walkDog().then(value =>{ console.log(value); return cleanKitchen()})
+//          .then(value => { console.log(value); return takeOutTrash()})
+//          .then(value => { console.log(value); console.log("You finished all the chores!!!");})
+//          .catch(error => { console.error(error); });
+
+
+async function doChores() {
+   
+   try {
+    const walkDogResult = await walkDog();
+    console.log(walkDogResult);
+    const cleanKitchenResult = await cleanKitchen();
+    console.log(cleanKitchenResult);
+    const takeOutTrashResult = await takeOutTrash();
+    console.log(takeOutTrashResult);
+    console.log("You finished all the chores!!!");
+   }
+   catch(error) {
+    console.error(error);
+   }
+}
+
+doChores();
+
+
+
+
 // json files 
 // fetch data from an API 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
