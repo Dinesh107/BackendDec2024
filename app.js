@@ -1853,7 +1853,7 @@
 // nodelist won't update to automatiaclly reflect changes
 
 
-let buttons = document.querySelectorAll(".myButtons");
+// let buttons = document.querySelectorAll(".myButtons");
 
 // console.log(buttons);
 
@@ -2085,46 +2085,46 @@ let buttons = document.querySelectorAll(".myButtons");
 // 3) take out the trash 
 
 
-function walkDog() {
-     return new Promise((resolve, reject) => {
-        setTimeout(() => {
+// function walkDog() {
+//      return new Promise((resolve, reject) => {
+//         setTimeout(() => {
     
-            const dogWalked = false;
+//             const dogWalked = false;
 
-            if(dogWalked) {
-                resolve("You walk the dog 🐈");
-            } else {
-                reject("The dog didn't walk");
-            }  
-        }, 1500);
-    })
-}
-function cleanKitchen() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            const kitchenCleand = true;
+//             if(dogWalked) {
+//                 resolve("You walk the dog 🐈");
+//             } else {
+//                 reject("The dog didn't walk");
+//             }  
+//         }, 1500);
+//     })
+// }
+// function cleanKitchen() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const kitchenCleand = true;
 
-            if(kitchenCleand) {
-                resolve("you clean the kitchen 🖌️");
-            } else {
-                reject("The kitchen is not clean");
-            }  
-        }, 2500);
-    })
-}
+//             if(kitchenCleand) {
+//                 resolve("you clean the kitchen 🖌️");
+//             } else {
+//                 reject("The kitchen is not clean");
+//             }  
+//         }, 2500);
+//     })
+// }
 
-function takeOutTrash() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            const trashTakenOut = true;
-            if(trashTakenOut) {
-                resolve("You take out the trash 🚮");
-            } else {
-                reject("The trash is not taken out");
-            }  
-        }, 1000)
-    })
-}
+// function takeOutTrash() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const trashTakenOut = true;
+//             if(trashTakenOut) {
+//                 resolve("You take out the trash 🚮");
+//             } else {
+//                 reject("The trash is not taken out");
+//             }  
+//         }, 1000)
+//     })
+// }
 
 
 // walkDog(() => {
@@ -2142,29 +2142,154 @@ function takeOutTrash() {
 //          .catch(error => { console.error(error); });
 
 
-async function doChores() {
+// async function doChores() {
    
-   try {
-    const walkDogResult = await walkDog();
-    console.log(walkDogResult);
-    const cleanKitchenResult = await cleanKitchen();
-    console.log(cleanKitchenResult);
-    const takeOutTrashResult = await takeOutTrash();
-    console.log(takeOutTrashResult);
-    console.log("You finished all the chores!!!");
-   }
-   catch(error) {
-    console.error(error);
-   }
+//    try {
+//     const walkDogResult = await walkDog();
+//     console.log(walkDogResult);
+//     const cleanKitchenResult = await cleanKitchen();
+//     console.log(cleanKitchenResult);
+//     const takeOutTrashResult = await takeOutTrash();
+//     console.log(takeOutTrashResult);
+//     console.log("You finished all the chores!!!");
+//    }
+//    catch(error) {
+//     console.error(error);
+//    }
+// }
+
+// doChores();
+
+
+
+// json files - (Javascript object notation), data-interchange format used for exchanging data b/w server and web app JSON files 
+
+// {key:value} or [value1, value2, value3] 
+
+
+// JSON.stringify() - converts a js object to json string  
+// JSON.parse() - converts JSON string to JS object
+
+
+
+// const names = ["Ram", "Vicky", "John", "Aslam"];
+
+// const person = {"name": "Ram","age": 29,"isEmployes": true,"hobbies": ["football", "books reading", "cooking"]}
+
+
+
+// const jsonString = JSON.stringify(names);
+// console.log(names);
+// console.log(jsonString);
+
+// const jsonString = JSON.stringify(person);
+// console.log(person);
+// console.log(jsonString);
+
+// const people = [{"name": "Ram","age": 29,"isEmployes": true}, 
+//                 {"name": "Shyam", "age": 32, "isEmployes": false},
+//                 {"name": "Gopal","age": 31,"isEmployes": true}]
+
+// const jsonString = JSON.stringify(people);
+// console.log(people);
+// console.log(jsonString);
+
+// const jsonNames = `["Ram", "Vicky", "John", "Aslam"]`;
+
+// const jsonPerson = `{"name": "Ram","age": 29,"isEmployes": true,"hobbies": ["football", "books reading", "cooking"]}`
+
+// const jsonPeople = `[{"name": "Ram","age": 29,"isEmployes": true}, 
+//                      {"name": "Shyam", "age": 32, "isEmployes": false},
+//                      {"name": "Gopal","age": 31,"isEmployes": true
+//                      }]`;
+
+//const parsedData = JSON.parse(jsonNames);
+
+// console.log(jsonNames);
+// console.log(parsedData);
+
+
+// const parsedData = JSON.parse(jsonPerson);
+
+// console.log(jsonPerson);
+// console.log(parsedData);
+
+
+// const parsedData = JSON.parse(jsonPeople);
+
+// console.log(jsonPeople);
+// console.log(parsedData);
+                  
+
+
+// fetching - it is function
+
+// fetch("as relative file path" or "absolute file path")
+
+// fetch("person.json")
+//      .then(response => response.json())
+//      .then(value => console.log(value))
+
+
+// fetch("names.json")
+//      .then(response => response.json())
+//      .then(value => console.log(value))
+
+
+// fetch("people.json")
+//      .then(response => response.json())
+//      .then(values => values.forEach(value => console.log(value)))
+//      .catch(error => console.error(error));
+
+
+
+
+
+
+// fetch data from an API - finction used for making HTTP requests to fetch resourses.
+// (JSON style data, images, files)
+
+// simplifies asynchronous data fetching in js and used for interacting with APIs to retrive and send data asynchronously over the web
+
+// fetch(url, {method: 'POST'})
+// fetch(url, {method: 'GET'})
+// fetch(url, {method: 'DELETE'})
+// fetch(url, {method: 'PUT'})
+
+// fetch("https://pokeapi.co/api/v2/pokemon/pikachu/")
+//       .then(response => {
+//         if(!response.ok) {
+//             throw new Error(`HTTP error! status: ${response.status}, sorry could not fetch the resourses`);
+//         }
+//         return response.json();
+//       })
+//       .then(data => console.log(data))
+//       .catch(error => console.error(error));
+
+fetchData();
+
+async function fetchData() {
+    try {
+      const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
+      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+      if(!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}, sorry could not fetch the resourses`);
+      } 
+      const data = await response.json();
+      console.log(data);
+      const pokemonImage = data.sprites.front_default;
+      const imageEle = document.getElementById("pokemonImages");
+      imageEle.src = pokemonImage;
+      imageEle.style.display = "block";
+    } catch(error) {
+       console.log(error);
+    }
 }
 
-doChores();
 
 
 
 
-// json files 
-// fetch data from an API 
 
 
 
