@@ -2186,9 +2186,9 @@
 // console.log(person);
 // console.log(jsonString);
 
-// const people = [{"name": "Ram","age": 29,"isEmployes": true}, 
-//                 {"name": "Shyam", "age": 32, "isEmployes": false},
-//                 {"name": "Gopal","age": 31,"isEmployes": true}]
+// const people = [ {"name": "Ram","age": 29,"isEmployes": true}, 
+//                  {"name": "Shyam", "age": 32, "isEmployes": false},
+//                  {"name": "Gopal","age": 31,"isEmployes": true}]
 
 // const jsonString = JSON.stringify(people);
 // console.log(people);

@@ -1,0 +1,15 @@
+Typescript for angular 
+
+super of javascript 
+
+Typescript features 
+
+* Strong typing
+
+* Object Oriented Features
+
+* Compile time error handling
+
+                  translate
+Typescript code   -------->   Javascript code
+
